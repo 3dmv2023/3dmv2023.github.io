@@ -1,5 +1,5 @@
 # 3DMV 
-3DMV is a workshop on Learning 3D with Multi-View Supervision hosted in CVPR 2023. 
+3DMV is a workshop on Learning 3D with Multi-View Supervision hosted in CVPR 2023, Vancouver, Canada. 
 
 ![](misc/surface.png)
 

@@ -311,9 +311,9 @@
                 </tr>
                 <tr class="success">
                   <td>{{tableData[currentCountry][1]}}</td>
-                  <td><strong>Automatic 3D Content Creation </strong></td>
-                  <td><a href="https://www.cs.utoronto.ca/~fidler/" target="blank">Sanja Fidler</a></td>
-                  <td> - </td>
+                  <td><strong>Multi-View for 3D Segmentation</strong></td>
+                  <td><a href="https://niessnerlab.org/" target="blank">Matthias Niessner</a></td>
+                  <td>-</td>
                 </tr>
                 <tr style="border-bottom:1px solid black">
                   <td colspan="100%"></td>
@@ -327,17 +327,9 @@
                 <tr style="border-bottom:1px solid black">
                   <td colspan="100%"></td>
                 </tr>
+
                 <tr class="success">
                   <td>{{tableData[currentCountry][3]}}</td>
-                  <td><strong>Multi-View for 3D Segmentation</strong></td>
-                  <td><a href="https://niessnerlab.org/" target="blank">Matthias Niessner</a></td>
-                  <td>-</td>
-                </tr>
-                <tr style="border-bottom:1px solid black">
-                  <td colspan="100%"></td>
-                </tr>
-                <tr class="success">
-                  <td>{{tableData[currentCountry][4]}}</td>
                   <td><strong>Break - Poster Session </strong></td>
                   <td></td>
                   <td></td>
@@ -347,7 +339,7 @@
                 </tr>
 
                 <tr class="success">
-                  <td>{{tableData[currentCountry][5]}}</td>
+                  <td>{{tableData[currentCountry][4]}}</td>
                   <td><strong>Deep Multi-View Stereo</strong></td>
                   <td><a href="https://gkioxari.github.io/" target="blank">Georgia Gkioxari</a></td>
                   <td>-</td>
@@ -356,7 +348,7 @@
                   <td colspan="100%"></td>
                 </tr>
                 <tr class="success">
-                  <td>{{tableData[currentCountry][6]}}</td>
+                  <td>{{tableData[currentCountry][5]}}</td>
                   <td><strong>Multi-view for 3D Generation</strong></td>
                   <td><a href="https://cs.stanford.edu/~poole/" target="blank">Ben Poole</a>
                   <td>-</td>
@@ -366,7 +358,7 @@
                   <td colspan="100%"></td>
                 </tr>
                 <tr class="success">
-                  <td>{{tableData[currentCountry][7]}}</td>
+                  <td>{{tableData[currentCountry][6]}}</td>
                   <td><strong>Panel Discussion (includes all speakers)</strong></td>
                   <td> Organizers </td>
                   <td> - </td>
@@ -383,7 +375,7 @@
     </div>
   </div>
 
-
+<!-- 
 
   <div id="speakers" class="content-section-b">
     <div class="container">
@@ -487,7 +479,7 @@
           </h5>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
 
@@ -496,7 +488,7 @@
 
 
 
-
+<!-- 
 
 
     <div id="organizers" class="content-section-a">
@@ -508,7 +500,7 @@
                 src="img/organizer/guohaoli.jpg" alt=""></center>
             <a href="http://www.ghli.org/">
               <h4 class="section-heading">
-                <center>Guohao Li</center>
+                <center>Abdullah Hamdi</center>
               </h4>
             </a>
             <h5 class="section-heading">
@@ -603,7 +595,7 @@
           </div>
         </div>
       </div>
-
+ -->
 
 
 
@@ -651,10 +643,10 @@
           <div class="row">
             <div class="wow" data-animation-delay="200">
               <div class="title lead3" style="text-align:center;color:white;font-size:24px">
-                Contact: guohao.li@kaust.edu.sa
+                Contact: abdullah.hamdi@kaust.edu.sa
               </div>
               <div class="sub-title lead3" style="text-align:center;color:white">
-                CVPR 2022 Tutorial ©2022
+                CVPR 2023 Workshop ©2023
               </div>
             </div>
           </div>
@@ -682,10 +674,10 @@
         var app = new Vue({
           el: '#controller',
           data: {
-            country: ['Central Daylight Time (CDT)'],
+            country: ['Pacific Standard Time'],
             currentCountry: 0,
             tableData: [
-              ['1:00pm-1:10pm', '1:10pm-1:50pm', '1:50pm-2:30pm', '2:30pm-3:10pm', '3:10pm-3:30pm', '3:30pm-4:10pm', '4:10pm-4:50pm', '4:50pm-5:30pm'],
+              ['8:00am-8:15am', '8:15am-8:55am', '8:55am-9:35am', '9:35am-10:30am', '10:30am-11:10am', '11:10am-11:50am','11:50am-12:15am'],
             ]
           },
           methods: {

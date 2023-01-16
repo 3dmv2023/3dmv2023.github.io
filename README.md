@@ -1,5 +1,5 @@
-# GML4VC
-GML4VC is the Graph Machine Learning for Visual Computing tutorial hosted in CVPR 2022. 
+# 3DMV 
+3DMV is a workshop on Learning 3D with Multi-View Supervision hosted in CVPR 2023. 
 
 ![](misc/surface.png)
 

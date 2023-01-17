@@ -4747,7 +4747,12 @@ footer p {
 			font-weight: 400;
 			text-align: center;
 		}
-		.sub-title{text-align:center}
+		.title{text-align:center; 
+           font-size: 16px;
+    }
+		.sub-title{text-align:center; 
+               font-size: 10px;
+    }
 		.pull-right {margin-bottom: 40px;}
 		address{margin-top:130px;}
 		.address{text-align:center}

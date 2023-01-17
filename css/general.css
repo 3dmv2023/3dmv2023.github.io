@@ -23,13 +23,13 @@ h4.section-heading:hover{
 
 .abcen{position: absolute;bottom: 8%;}
 
-.abcen1{position: absolute;top: 20%;}
+.abcen1{position: absolute;top: 10%;}
 
 .content-section-c {
 	border-top: 1px solid #32465A;
 	border-bottom: 1px solid #32465A;
 	background-color: #34495e;
-	padding: 90px 0;
+	padding: 50px 30px 10px 30px; 
 }
 
 .descp{
@@ -42,6 +42,18 @@ h4.section-heading:hover{
 	margin-right: 10px;
 }
 
+.surface-title{
+	text-shadow: 0px 8px 4px black, 0 0 25px black;
+	font-weight: 400;
+	font-size: 60px
+}
+.title{text-align:center; 
+	font-size: 24px;
+}
+ .sub-title{text-align:center; 
+		font-size: 16px;
+}
+
 .lead2 {
 margin-bottom: 30px;
 margin-top: 20px;
@@ -51,6 +63,14 @@ font-weight: 300;
 }
 
 .lead3 {
+margin-bottom: 0px;
+margin-top: 0px;
+font-size: 24px;
+color: #8D8D8D;
+line-height: 1.46428571;
+font-weight: 300;
+}
+.lead4 {
 margin-bottom: 0px;
 margin-top: 0px;
 font-size: 16px;
@@ -317,13 +337,13 @@ color: #ECEBEB;
 
 .content-section-a {
 	background-color: #f8f8f8;
-	padding: 90px 0; 
+	padding: 50px 30px 10px 30px; 
 }
 
 .content-section-b {
 	border-top: 1px solid #e7e7e7;
 	border-bottom: 1px solid #e7e7e7;
-	padding: 90px 0; 
+	padding: 50px 30px 10px 30px; 
 }
 
 .section-heading {
@@ -1090,7 +1110,7 @@ color: #ECEBEB;
 			padding-top: 50px;
 			padding-bottom: 50px;
 			color: #f8f8f8;
-		    background-image: none; 
+		    /* background-image: none;  */
 			background-size: cover;
 			text-align: center;
 			background-color: #34495e;
@@ -1099,7 +1119,12 @@ color: #ECEBEB;
 		h1, .h1 {
 			font-size: 50px;
 		}
-		
+		.h1_home{
+			font-size: 40px;
+			font-family: arvo;
+			font-weight: 300;
+			letter-spacing: 3px;
+		}	
 		h3, .h3 {
 			font-size: 20px;
 		}

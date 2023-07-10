@@ -58,6 +58,18 @@
       gap: 10px;
       padding: 10px;
       white-space: nowrap; /* Prevent line breaks */
+      /* Always show scrollbar for WebKit browsers */
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+    }
+
+    .image-container::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .image-container::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 4px;
     }
 
     .image-container img {

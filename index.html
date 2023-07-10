@@ -50,7 +50,21 @@
     .node {
       stroke: white;
       stroke-width: 3px;
+
+
     }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-auto-rows: 200px;
+      grid-gap: 10px;
+  }
+  .grid-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
   </style>
   <!-- <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <script>
@@ -201,6 +215,66 @@
       </div>
     </div>
   </nav>
+
+
+  <div id="sponsors" class="content-section-b">
+    <div class="container">
+      <div class="row wow fadeInRightBig" data-animation-delay="200">
+        <h3 class="section-heading" style="text-align:justify;color:#164FC9">Sponsors</h3>
+        <!-- <h2 class="section-heading" style="text-align:center;color:#164FC9">They Trust Us</h3> -->
+        <div class="col-sm-3 wow fadeInRightBig" data-animation-delay="200"
+          style="text-align:center;margin-left:30%">
+          <center><img class="img-responsive" src="img/sponsors/luma_ai_logo.png" alt="" object-position="0 0">
+          </center>
+          <a href="https://lumalabs.ai/">
+            <h4 class="section-heading">
+              <center>Luma AI</center>
+            </h4>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="scope" class="content-section-b" style="border-top: 0">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-6 pull-right wow fadeInRightBig">
+          <img class="img-responsive " src="img/ipad.png" alt="">
+        </div>
+        <!-- <a href='http://cvpr2021.thecvf.com/program'>
+        <img class="img-responsive" style="width: 20vw" src="img/cvpr_logo.png" alt="">
+      </a> -->
+        <div class="wow fadeInRightBig" data-animation-delay="200">
+          <h3 class="section-heading" style="text-align:justify;color:#164FC9">
+            Event Pictures</h3>
+            <div id="grid-container" class="grid-container">
+              <!-- Images will be appended here by JavaScript -->
+          </div>
+      
+          <script>
+              // Array with image names (replace with your actual image names)
+              const images = ['IMG_2087.HEIC','IMG_2088.HEIC','IMG_2089.HEIC','IMG_2090.HEIC','IMG_2097.HEIC','IMG_2098.HEIC','IMG_2100.HEIC','IMG_2101.HEIC','IMG_2104.HEIC','IMG_2105.HEIC','IMG_2110.HEIC','IMG_2113.HEIC','IMG_2114.HEIC','IMG_2115.JPG','IMG_2921.HEIC','IMG_2922.HEIC',];
+
+      
+              const container = document.getElementById('grid-container');
+      
+              images.forEach(image => {
+                  const img = document.createElement('img');
+                  img.src = `img/event/${image}`;
+                  img.alt = image;
+                  container.appendChild(img);
+              });
+          </script>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
   <!-- Scope -->
   <div id="scope" class="content-section-a" style="border-top: 0">
@@ -797,27 +871,7 @@
 
 
 
-      <div id="sponsors" class="content-section-b">
-        <div class="container">
-          <div class="row wow fadeInRightBig" data-animation-delay="200">
-            <h3 class="section-heading" style="text-align:justify;color:#164FC9">Sponsors</h3>
-            <!-- <h2 class="section-heading" style="text-align:center;color:#164FC9">They Trust Us</h3> -->
-            <div class="col-sm-3 wow fadeInRightBig" data-animation-delay="200"
-              style="text-align:center;margin-left:30%">
-              <center><img class="img-responsive" src="img/sponsors/luma_ai_logo.png" alt="" object-position="0 0">
-              </center>
-              <a href="https://lumalabs.ai/">
-                <h4 class="section-heading">
-                  <center>Luma AI</center>
-                </h4>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
+    
 
 
 

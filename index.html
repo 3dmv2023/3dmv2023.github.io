@@ -50,8 +50,6 @@
     .node {
       stroke: white;
       stroke-width: 3px;
-
-
     }
 
     .grid-container {
@@ -59,12 +57,18 @@
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       grid-auto-rows: 200px;
       grid-gap: 10px;
-  }
-  .grid-container img {
+    }
+
+    .grid-container img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-  }
+      transition: transform 0.3s; /* Animation */
+    }
+
+    .grid-container img:hover {
+      transform: scale(1.1); /* Zoom in */
+    }
   </style>
   <!-- <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <script>
@@ -226,18 +230,15 @@
         <div class="col-sm-6 pull-right wow fadeInRightBig">
           <img class="img-responsive " src="img/ipad.png" alt="">
         </div>
-        <!-- <a href='http://cvpr2021.thecvf.com/program'>
-        <img class="img-responsive" style="width: 20vw" src="img/cvpr_logo.png" alt="">
-      </a> -->
+
         <div class="wow fadeInRightBig" data-animation-delay="200">
           <h3 class="section-heading" style="text-align:justify;color:#164FC9">
             Event Pictures</h3>
             <div id="grid-container" class="grid-container">
               <!-- Images will be appended here by JavaScript -->
-          </div>
-      
+            </div>
+        
           <script>
-              // Array with image names (replace with your actual image names)
               const images = [
               '062309d2-2710-4257-9cdc-9ef1074646ad.jpg', '13e993e4-a2f8-423f-97c4-d3497c29da48.jpg', '79935a91-5901-4c9f-a23a-0571a00f0a57(1).jpg', '79935a91-5901-4c9f-a23a-0571a00f0a57.jpg', '7c5b4373-5230-4c6c-bbdb-fef64f183804.jpg', '863f5184-6660-4a01-9476-652968b9c5c3.jpg', 'bd845362-fa8c-4325-ad32-66165c4032a5.jpg', 'ceef3074-abc6-4f52-9675-ce99247990c7.jpg', 'dbe9fae4-b23e-4d86-9568-7961fc2287af.jpg', 'f142a4e5-8aed-4f24-879c-2414122d363b.jpg', 'IMG_2087.jpg', 'IMG_2088.jpg', 'IMG_2089.jpg', 'IMG_2090.jpg', 'IMG_2097.jpg', 'IMG_2098.jpg', 'IMG_2100.jpg', 'IMG_2101.jpg', 'IMG_2104.jpg', 'IMG_2105.jpg', 'IMG_2110.jpg', 'IMG_2113.jpg', 'IMG_2114.jpg', 'IMG_2115.JPG', 'IMG_2921.jpg', 'IMG_2922.jpg', ];
                   
@@ -256,6 +257,7 @@
     </div>
   </div>
   </div>
+
 
   <!-- Scope -->
   <div id="scope" class="content-section-a" style="border-top: 0">
